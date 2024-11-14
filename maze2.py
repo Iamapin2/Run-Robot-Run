@@ -34,17 +34,15 @@ robot.showturtle()
 
 wn.bgpic("maze2.png") 
 
-
-
-for step in range(3): 
-  move()
 for step in range(3):
   turn_left()
-  for step in range(0):
-    move()
-for step in range(2):
-  move()
 
+for step in range(2):
+  for step in range(3):
+    move()
+  turn_left()
+
+move()
  
 
 wn.mainloop()
